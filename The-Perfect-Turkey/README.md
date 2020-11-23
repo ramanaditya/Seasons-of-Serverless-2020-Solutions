@@ -1,6 +1,13 @@
 # The Perfect Holiday Turkey
 ![The Perfect Turkey](https://raw.githubusercontent.com/microsoft/Seasons-of-Serverless/main/graphics/banner-1.png)
 
+## Challenge 1: The Perfect Holiday Turkey 🦃
+Read the Challenge [here](https://github.com/microsoft/Seasons-of-Serverless/blob/main/Nov-23-2020.md)
+
+## Solution
+Solution creates a Serverless Endpoint using Azure Funtions using "Http Trigger" Template.
+Language: python
+
 # Running Serverless Endpoint
 ## Clone the repo
 ```bash
