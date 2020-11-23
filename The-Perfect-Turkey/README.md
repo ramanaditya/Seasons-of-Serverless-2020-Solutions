@@ -27,11 +27,13 @@ func start
 
 ## Testing the API
 #### BASE URL: http://localhost:7071/
+
 #### API Endpoint: api/recipe
+
 - [Browser](http://localhost:7071/api/recipe)
 - [Postman](https://www.postman.com/)
 
 ## Testing the API on [Postman](https://www.postman.com/)
-![/api/recipe](1-1.png)
-![/api/recipe?weight=190](1-2.png)
+![/api/recipe](../images/1-1.png)
+![/api/recipe?weight=190](../images1-2.png)
 
