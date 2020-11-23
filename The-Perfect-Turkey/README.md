@@ -25,15 +25,26 @@ python -m pip install -r requirements.txt
 func start
 ```
 
-## Testing the API
-#### BASE URL: http://localhost:7071/
-
-#### API Endpoint: api/recipe
+## Verify the API
+#### BASE URL: [http://localhost:7071](http://localhost:7071)
+#### API Endpoint: [api/recipe](http://localhost:7071/api/recipe)
 
 - [Browser](http://localhost:7071/api/recipe)
 - [Postman](https://www.postman.com/)
 
-## Testing the API on [Postman](https://www.postman.com/)
+## Verify the API with [Postman](https://www.postman.com/)
 ![/api/recipe](../images/1-1.png)
-![/api/recipe?weight=190](../images1-2.png)
+![/api/recipe?weight=190](../images/1-2.png)
 
+## Verify the API with `curl`
+```bash
+curl -X GET http://localhost:7071/api/recipe?weight=190
+```
+![/api/recipe?weight=190](../images/1-3.png)
+
+## Verify the API with `http`
+```bash
+http GET http://localhost:7071/api/recipe?weight=190
+```
+
+![/api/recipe?weight=190](../images/1-4.png)

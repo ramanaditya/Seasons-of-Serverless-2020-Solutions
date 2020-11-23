@@ -21,7 +21,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     TIME = {"Brine Time": [2.4, "hours"], "Roast Time": [15, "minutes"]
             }
 
-    if weight:
+    if weight > 0:
         weight = float(weight)
         types = [INGREDIENTS, TIME]
         for ele in types:
@@ -30,8 +30,13 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(
             json.dumps({"Ingredients": INGREDIENTS, "Time": TIME}), mimetype="application/json", charset="utf-8", status_code=200
         )
+    elif weight <= 0:
+        return func.HttpResponse(
+            "Weight must be greater than zero.",
+            status_code=400
+        )
     else:
         return func.HttpResponse(
-            "This HTTP triggered function executed successfully. Pass a weight in the query string or in the request body to get your great Turkey brine",
+            "This HTTP triggered function executed successfully. Pass weight in the query string or in the request body to get your great Turkey brine.",
             status_code=200
         )
